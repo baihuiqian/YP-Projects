@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Phases Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            cursor: pointer;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Research Phases Checklist</h1>
+
+<!-- Phase 1 -->
+<div class="section">
+    <h2 onclick="toggleSection(this)">Phase 1: Research Design and Planning</h2>
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Category</th>
+                    <th>Task Description</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Define Research Objectives</td>
+                    <td>Write a brief (1-page) statement articulating the research question(s) or hypothesis.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Preliminary Literature Review</td>
+                    <td>Create a summary table of 10-15 key references providing context, theoretical background, and insights into current knowledge gaps.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Sources and Resources Planning</td>
+                    <td>Identify potential data sources (existing datasets, data repositories, or means of collecting new data) and create a resource checklist (equipment, software, funding, personnel).</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Research Design and Methodology</td>
+                    <td>Draft a methodology document detailing study design, sampling strategies, analytical approaches, and tools/methods to be used.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Research Plan and Data Management</td>
+                    <td>Create a research timeline: a high-level plan mapping key tasks, milestones, and estimated timeframes. Draft a data management plan including instruments, storage and documentation, file naming conventions, and folder structures for consistency.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Phase 2 -->
+<div class="section">
+    <h2 onclick="toggleSection(this)">Phase 2: Data Collection and Analysis</h2>
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Category</th>
+                    <th>Task Description</th>
+                    <th>Deliverables</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data Collection</td>
+                    <td>Collect raw data files in appropriate formats (e.g., GeoTIFF, CSV, NetCDF).</td>
+                    <td>Raw data files.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Collection</td>
+                    <td>Document quality control measures during data collection.</td>
+                    <td>Quality control report.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Collection</td>
+                    <td>Maintain field/experiment logs documenting the data collection process.</td>
+                    <td>Field/experiment logs.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Processing</td>
+                    <td>Clean and preprocess datasets for analysis.</td>
+                    <td>Processed data files.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Processing</td>
+                    <td>Document data cleaning steps, including handling missing values and outliers.</td>
+                    <td>Data cleaning documentation.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Processing</td>
+                    <td>Prepare scripts or code notebooks for preprocessing with inline documentation.</td>
+                    <td>Preprocessing scripts/code notebooks.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Analysis</td>
+                    <td>Generate statistical outputs, including graphs, tables, and models.</td>
+                    <td>Graphs, tables, models.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Analysis</td>
+                    <td>Create visualizations (e.g., maps, plots) illustrating key patterns and trends.</td>
+                    <td>Data visualizations.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Analysis</td>
+                    <td>Write a preliminary findings report summarizing insights.</td>
+                    <td>Preliminary findings report.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Data Analysis</td>
+                    <td>Prepare annotated scripts or code notebooks for data analysis.</td>
+                    <td>Analysis scripts/code notebooks.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Phase 3 -->
+<div class="section">
+    <h2 onclick="toggleSection(this)">Phase 3: Interpretation, Reporting, and Dissemination</h2>
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Category</th>
+                    <th>Task Description</th>
+                    <th>Deliverables</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Interpretation</td>
+                    <td>Relate findings back to the research question or hypothesis.</td>
+                    <td>Summary of key findings linked to research objectives.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Interpretation</td>
+                    <td>Discuss implications, limitations, and potential applications of the results.</td>
+                    <td>Discussion document or report section on implications and limitations.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Interpretation</td>
+                    <td>Suggest future research directions based on findings.</td>
+                    <td>List of future research directions.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Documentation and Reporting</td>
+                    <td>Write a research paper, thesis, or report including all sections (abstract, introduction, methodology, results, discussion, conclusion).</td>
+                    <td>Completed research paper, thesis, or report.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Documentation and Reporting</td>
+                    <td>Prepare supplementary materials (e.g., datasets, codes, appendices).</td>
+                    <td>Supplementary materials (datasets, codes, appendices).</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Documentation and Reporting</td>
+                    <td>Review and finalize the document for submission or publication.</td>
+                    <td>Finalized manuscript or document ready for submission.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Dissemination</td>
+                    <td>Prepare and deliver conference presentations, posters, or workshops.</td>
+                    <td>Conference presentation, poster, or workshop materials.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Dissemination</td>
+                    <td>Publish research in peer-reviewed journals or open-access platforms.</td>
+                    <td>Published article or preprint.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Dissemination</td>
+                    <td>Engage stakeholders or policymakers if applicable.</td>
+                    <td>Stakeholder engagement materials or reports.</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<button onclick="saveProgress()">Save Progress</button>
+
+<script>
+    // Toggle section visibility
+    function toggleSection(header) {
+        const content = header.nextElementSibling;
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Save progress for all phases
+    function saveProgress() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const progress = Array.from(checkboxes).map(cb => cb.checked);
+        localStorage.setItem('researchChecklist', JSON.stringify(progress));
+        alert('Progress saved successfully!');
+    }
+
+    // Load progress
+    function loadProgress() {
+        const progress = JSON.parse(localStorage.getItem('researchChecklist')) || [];
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((cb, index) => {
+            cb.checked = progress[index] || false;
+        });
+    }
+
+    // Initialize
+    document.querySelectorAll('.content').forEach(content => (content.style.display = 'none'));
+    window.onload = loadProgress;
+</script>
+
+</body>
+</html>
